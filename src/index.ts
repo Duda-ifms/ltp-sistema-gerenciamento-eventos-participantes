@@ -26,7 +26,7 @@ evento02.adicionarParticipante(participante3);
 evento03.adicionarParticipante(participante3);
 evento03.adicionarParticipante(participante4);
 
-// Relatório inicial (nenhuma presença ainda)
+// Relatório inicial 
 ControlePresenca.gerarControlePresenca(participantes, 3);
 
 // Registrando presença individual

@@ -1,7 +1,7 @@
 export default class InscricaoParticipantes {
   id: number;
-  nome: string;
-  presenca: number = 0; // número de presenças
+  nome: string; 
+  presenca: number = 0; // A presença começa em 0 e vai aumentando
 
   constructor(id: number, nome: string) {
     this.id = id;
@@ -9,7 +9,7 @@ export default class InscricaoParticipantes {
   }
 
   registrarPresenca(): void {
-    this.presenca += 1; // incrementa presença
+    this.presenca += 1; // sempre que for chamado, soma +1 na presença
     console.log(`${this.nome} marcou presença!`);
   }
 }
