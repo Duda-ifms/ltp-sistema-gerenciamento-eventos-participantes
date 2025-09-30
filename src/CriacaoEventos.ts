@@ -16,7 +16,7 @@ export default class CriacaoEventos {
     this.participantes.push(participante);
     console.log(`Participante ${participante.nome} adicionado ao evento ${this.titulo}!`);
   }
-
+//relatorio de participante do evento
   registrarPresencaGeral(): void {
     this.participantes.forEach((p) => p.registrarPresenca());
   }
