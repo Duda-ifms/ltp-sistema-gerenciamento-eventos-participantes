@@ -1,4 +1,4 @@
-export default class InscricaoParticipantes {
+export default class Participantes {
   id: number;
   nome: string; 
   presenca: number = 0; // A presença começa em 0 e vai aumentando

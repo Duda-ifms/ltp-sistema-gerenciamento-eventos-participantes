@@ -1,6 +1,6 @@
-import InscricaoParticipantes from "./InscricaoParticipantes";
+import InscricaoParticipantes from "./Participantes";
 import CriacaoEventos from "./CriacaoEventos";
-import ControlePresenca from "./ControlePresenca";
+import ControlePresenca from "./RelatorioParticipante";
 
 const participantes: InscricaoParticipantes[] = [];
 

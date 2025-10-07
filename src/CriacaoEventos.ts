@@ -1,4 +1,4 @@
-import InscricaoParticipantes from "./InscricaoParticipantes";
+import InscricaoParticipantes from "./Participantes";
 
 export default class CriacaoEventos {
   id: number;

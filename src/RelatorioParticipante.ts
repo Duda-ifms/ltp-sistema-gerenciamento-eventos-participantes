@@ -1,7 +1,7 @@
-import InscricaoParticipantes from "./InscricaoParticipantes";
+import Participantes from "./Participantes";
 
 export default class ControlePresenca {
-  static gerarControlePresenca(participantes: InscricaoParticipantes[], totalEventos: number): void {
+  static gerarControlePresenca(participantes: Participantes[], totalEventos: number): void {
     console.log(" Controle de Presença ");
     participantes.forEach((participante) => {
       const percentual = ((participante.presenca / totalEventos) * 100).toFixed(1); //porcentagem de preseça de cada aluno
@@ -12,4 +12,3 @@ export default class ControlePresenca {
     console.log();
   }
 }
-// mudar para relatorio de participante
