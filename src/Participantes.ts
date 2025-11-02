@@ -13,4 +13,3 @@ export default class Participantes {
     console.log(`${this.nome} marcou presença!`);
   }
 }
-//mudar para participante
