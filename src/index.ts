@@ -1,8 +1,11 @@
 import InscricaoParticipantes from "./Participantes";
 import CriacaoEventos from "./CriacaoEventos";
 import ControlePresenca from "./RelatorioParticipante";
+import RegistroEvento from "./RegistroEventos";
+import RegistroParticipante from "./RegistroParticipante";
 
-const participantes: InscricaoParticipantes[] = [];
+// Lista de participantes
+const participantes = [];
 
 // Criando participantes
 const participante1 = new InscricaoParticipantes(1, "João Felix");
@@ -26,14 +29,19 @@ evento02.adicionarParticipante(participante3);
 evento03.adicionarParticipante(participante3);
 evento03.adicionarParticipante(participante4);
 
-// Relatório inicial 
+// Relatório inicial
 ControlePresenca.gerarControlePresenca(participantes, 3);
+
+// Registrando evento corretamente (corrigido)
+const registroEvento = new RegistroEvento(participante1, new Date(), "Semana de Tecnologia");
+registroEvento.registrar();
 
 // Registrando presença individual
 participante1.registrarPresenca();
 participante2.registrarPresenca();
 participante3.registrarPresenca();
 participante4.registrarPresenca();
+
 ControlePresenca.gerarControlePresenca(participantes, 3);
 
 // Presença geral por evento
