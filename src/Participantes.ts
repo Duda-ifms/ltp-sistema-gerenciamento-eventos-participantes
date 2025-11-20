@@ -18,3 +18,6 @@ export default class Participantes {
     return this.presenca;
   }
 }
+
+//atividade erro 
+//video segunda atividade 
