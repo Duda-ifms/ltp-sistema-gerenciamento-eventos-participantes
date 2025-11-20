@@ -1,6 +1,6 @@
 export default class Participantes {
   id: number;
-  nome: string; 
+  nome: string;
   private presenca: number = 0; // atributo privado
 
   constructor(id: number, nome: string) {
@@ -18,6 +18,3 @@ export default class Participantes {
     return this.presenca;
   }
 }
-
-//atividade erro 
-//video segunda atividade 
