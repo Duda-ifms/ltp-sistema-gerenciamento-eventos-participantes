@@ -1,25 +1,20 @@
-export class ParticipanteError extends Error {
+export class ParticipanteErros extends Error {
   constructor(message: string) {
     super(message);
     this.name = "ParticipanteError";
   }
 }
 
-export class ParticipanteNaoEncontradoError extends ParticipanteError {
+export class ParticipanteNaoEncontradoErros extends ParticipanteErros {
   constructor(id: number) {
-    super(`Participante com ID ${id} não encontrado.`);
+    super(`Estudante com ID ${id} não encontrado ou não pertence à turma.`);
     this.name = "ParticipanteNaoEncontradoError";
-
   }
 }
 
-export class DadosInvalidosParticipanteError extends ParticipanteError {
+export class DadosInvalidosParticipanteErros extends ParticipanteErros {
   constructor(campo: string) {
     super(`Dados inválidos: ${campo}`);
     this.name = "DadosInvalidosParticipanteError";
-
   }
 }
-
-
-
