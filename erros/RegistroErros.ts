@@ -18,3 +18,5 @@ export class ParticipanteDuplicadoError extends RegistroError {
     this.name = "ParticipanteDuplicadoError";
   }
 }
+
+

@@ -4,6 +4,8 @@ import ControlePresenca from "./RelatorioParticipante";
 import RegistroEvento from "./RegistroEventos";
 import RegistroParticipante from "./RegistroParticipante";
 
+
+
 // Lista de participantes
 const participantes = [];
 
@@ -12,7 +14,8 @@ const participante1 = new InscricaoParticipantes(1, "João Felix");
 const participante2 = new InscricaoParticipantes(2, "João Pedro");
 const participante3 = new InscricaoParticipantes(3, "Maria Clara");
 const participante4 = new InscricaoParticipantes(4, "Rayssa");
-participantes.push(participante1, participante2, participante3, participante4);
+const participante5 = new InscricaoParticipantes(4, "Rayssa");
+participantes.push(participante1, participante2, participante3, participante4, participante5);
 
 // Criando eventos
 const evento01 = new CriacaoEventos(1, "Semana de Tecnologia", new Date("2025-10-10"));

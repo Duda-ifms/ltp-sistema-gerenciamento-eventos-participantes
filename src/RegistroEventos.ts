@@ -18,3 +18,5 @@ export default class RegistroEvento extends RegistroPresenca {
     console.log(`Evento: ${this.evento}`);
   }
 }
+
+
